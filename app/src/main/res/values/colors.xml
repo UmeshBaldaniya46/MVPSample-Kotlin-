@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#419df0</color>
+    <color name="colorPrimaryDark">#2e71ae</color>
+    <color name="colorAccent">#419df0</color>
+
+    <color name="GradientColorStart">#419df0</color>
+    <color name="GradientColorEnd">#8d60f1</color>
+
+    <color name="textPrimary">#565555</color>
+    <color name="textSecondary">#777777</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorRed">#E41200</color>
+
+</resources>

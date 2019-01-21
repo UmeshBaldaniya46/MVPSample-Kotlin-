@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/edtUserNmeLoginActivity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edtUserNmeLoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_email_or_username"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingStart="42dp"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/textSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtPasswordLoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mail"
+        app:layout_constraintBottom_toBottomOf="@+id/edtUserNmeLoginActivity"
+        app:layout_constraintStart_toStartOf="@id/edtUserNmeLoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/edtUserNmeLoginActivity" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/edtPasswordLoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="center_vertical"
+        android:hint="@string/hint_password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:paddingStart="42dp"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/textSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pass"
+        app:layout_constraintBottom_toBottomOf="@+id/edtPasswordLoginActivity"
+        app:layout_constraintStart_toStartOf="@id/edtPasswordLoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/edtPasswordLoginActivity" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMeLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:button="@drawable/checkbox_selector"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:text="Remember it!"
+        android:textColor="@color/textPrimary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLoginActivity" />
+
+    <TextView
+        android:id="@+id/txtSigninLoginActivity"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/style_primary_bordat_circle"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:text="SIGNIN"
+        android:textAllCaps="true"
+        android:textColor="@color/GradientColorEnd"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLoginActivity" />
+
+    <ImageView
+        android:id="@+id/ivSigninLoginActivity"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/style_grafient_circle"
+        android:elevation="6dp"
+        android:padding="18dp"
+        android:src="@drawable/ic_signin"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSigninLoginActivity"
+        app:layout_constraintStart_toStartOf="@id/txtSigninLoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/txtSigninLoginActivity" />
+
+    <ProgressBar
+        android:id="@+id/pbSigninLoginActivity"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/style_grafient_circle"
+        android:elevation="6dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSigninLoginActivity"
+        app:layout_constraintEnd_toEndOf="@id/txtSigninLoginActivity"
+        app:layout_constraintTop_toTopOf="@+id/txtSigninLoginActivity" />
+
+    <TextView
+        android:id="@+id/txtForgotPasswordLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Forgot Password ?"
+        android:textColor="@color/textPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSigninLoginActivity" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Kotlin MVP Sample</string>
+
+    <string name="no_internet_message">Please check you internet connection</string>
+
+    <string name="hint_email_or_username">Email or User Name</string>
+    <string name="hint_password">Password</string>
+
+    <string name="label_enter_email_id">Please enter Email ot Username</string>
+    <string name="label_enter_password">please enter Password</string>
+
+</resources>
